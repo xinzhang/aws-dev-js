@@ -1,7 +1,6 @@
 ## Install
 helm install --name mysql-release stable/mysql
 
-
 ## To connect to your database:
 1. Run an Ubuntu pod that you can use as a client:
     kubectl run -i --tty ubuntu --image=ubuntu:16.04 --restart=Never -- bash -il
