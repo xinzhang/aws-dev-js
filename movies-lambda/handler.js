@@ -3,9 +3,13 @@ var movieService = require('./movieService');
 exports.handler = async(event) => {
   // TODO implement
   const response = {
-    statusCode: 200,
-    body: JSON.stringify('...'),
+    statusCode: 200,    
+    body: JSON.stringify('hello passes.'),
   };
+
+  if (!event.resourcePath) {
+    return response;  
+  }
 
   if (typeof event === 'string')
     event = JSON.parse(event);
