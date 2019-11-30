@@ -1,5 +1,5 @@
 {
-  "name": "aws-dev",
+  "name": "movies-lambda",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,8 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "async": "^3.1.0",
-    "aws-sdk": "^2.575.0",
+    "aws-sdk": "^2.580.0",
     "uuid": "^3.3.3"
   }
 }
