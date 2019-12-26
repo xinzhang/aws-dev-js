@@ -9,10 +9,10 @@ metadata:
   namespace: default
 spec:
   rules:
-    - host: httpbin.auscoservices.com.au
+    - host: httpbin.dev.auscoservices.com.au
       http:
         paths:
-          - path: /
+          - path: /*
             backend:
-              serviceName: http-service
+              serviceName: httpbin-service
               servicePort: http
