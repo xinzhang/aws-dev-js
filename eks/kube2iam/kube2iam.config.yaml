@@ -1,0 +1,14 @@
+aws:
+  region: "ap-sourtheast-2"
+
+extraArgs:
+  auto-discover-base-arn: true
+  auto-discover-default-role: true
+
+# Won't work with Calico
+host:
+  iptables: true
+  interface: eni+
+
+rbac:
+  create: true
