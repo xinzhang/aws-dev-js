@@ -8,7 +8,7 @@ ROLE_NAME=$(aws cloudformation describe-stack-resources --stack-name $STACK_NAME
 
 test -n "$ROLE_NAME" && echo ROLE_NAME is "$ROLE_NAME" || echo ROLE_NAME is not set
 # Example Output
-ROLE_NAME is eks-workshop-nodegroup
+ROLE_NAME is eksctl-xz-eks-nodegroup-standard-NodeInstanceRole-1CJB6BIUZNVCG
 
 ### for xray
 aws iam attach-role-policy --role-name $ROLE_NAME \
@@ -18,3 +18,5 @@ aws iam attach-role-policy --role-name $ROLE_NAME \
 
 aws iam attach-role-policy --role-name $ROLE_NAME \
 --policy-arn arn:aws:iam::aws:policy/AmazonRoute53FullAccess
+
+### for kube2iam
