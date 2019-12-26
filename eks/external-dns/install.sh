@@ -1,0 +1,1 @@
+wget https://raw.githubusercontent.com/kubernetes-sigs/aws-alb-ingress-controller/v1.1.3/docs/examples/external-dns.yaml
