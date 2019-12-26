@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: alb
+    alb.ingress.kubernetes.io/subnets: subnet-084c5895eb1d52dd7,subnet-02071d8a55e08f4bf,subnet-0020f3fbe59736d60
+  name: httpbin-ingress
+  namespace: default
+spec:
+  rules:
+    - host: httpbin.auscoservices.com.au
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: http-service
+              servicePort: http
